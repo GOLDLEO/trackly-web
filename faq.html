@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ — Trackly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css">
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+  <link rel="stylesheet" href="assets/css/lindy-uikit.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="app-sidebar">
+    <nav class="app-nav">
+      <a class="app-nav__link" href="dashboard.html">
+        <i class="lni lni-dashboard"></i><span>Dashboard</span>
+      </a>
+      <a class="app-nav__link" href="channels.html">
+        <i class="lni lni-world"></i><span>Каналы</span>
+      </a>
+      <a class="app-nav__link" href="keywords.html">
+        <i class="lni lni-keyword-research"></i><span>Ключевые слова</span>
+      </a>
+
+      <div class="app-nav__divider"></div>
+
+      <a class="app-nav__link active" href="faq.html">
+        <i class="lni lni-question-circle"></i>
+        <span>FAQ</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="app-main">
+
+    <header class="app-header">
+      <div class="app-header__left">
+        <h5 class="mb-0">FAQ</h5>
+        <span class="text-muted small ms-2">
+          Часто задаваемые вопросы
+        </span>
+      </div>
+    </header>
+
+    <main class="app-content">
+
+      <!-- INTRO -->
+      <div class="help-card mb-4">
+        <h5>❓ Что здесь?</h5>
+        <p class="text-muted mb-0">
+          Здесь собраны ответы на самые частые вопросы о работе Trackly:
+          сигналы, ключевые слова, минус-слова, лимиты и ошибки.
+        </p>
+      </div>
+
+      <!-- FAQ BLOCK -->
+      <div class="help-card mb-4">
+        <h6>🔹 Что делает Trackly?</h6>
+        <p class="text-muted">
+          Trackly отслеживает сообщения в Telegram-каналах, чатах и комментариях
+          по ключевым словам и показывает релевантные сигналы в ленте мониторинга.
+        </p>
+      </div>
+
+      <div class="help-card mb-4">
+        <h6>📡 Какие источники можно отслеживать?</h6>
+        <ul class="help-list">
+          <li>Публичные Telegram-каналы</li>
+          <li>Публичные группы и чаты</li>
+          <li>Комментарии под постами (если доступны)</li>
+        </ul>
+      </div>
+
+      <div class="help-card mb-4">
+        <h6>🔑 Что такое ключевые слова?</h6>
+        <p class="text-muted">
+          Ключевые слова — это слова или фразы,
+          по которым Trackly ищет сообщения.
+        </p>
+        <ul class="help-list">
+          <li>Могут быть глобальными</li>
+          <li>Могут быть привязаны к конкретному каналу</li>
+          <li>Поддерживают фразы из нескольких слов</li>
+        </ul>
+      </div>
+
+      <div class="help-card mb-4">
+        <h6>🚫 Что такое минус-слова?</h6>
+        <p class="text-muted">
+          Минус-слова исключают сообщения,
+          даже если в них есть ключевые слова.
+        </p>
+        <p class="text-muted small">
+          Пример: ключевое слово <code>django</code>,
+          минус-слово <code>обучение</code> —
+          сообщения про курсы будут исключены.
+        </p>
+      </div>
+
+      <div class="help-card mb-4">
+        <h6>⚡ Почему нет сигналов?</h6>
+        <ul class="help-list">
+          <li>В каналах нет совпадений</li>
+          <li>Ключевые слова слишком узкие</li>
+          <li>Сообщения исключены минус-словами</li>
+          <li>Канал временно недоступен</li>
+        </ul>
+      </div>
+
+      <div class="help-card mb-4">
+        <h6>⭐ Что такое «Избранное»?</h6>
+        <p class="text-muted">
+          Избранное — это сохранённые сигналы,
+          с которыми вы планируете работать позже:
+          лиды, идеи, контент.
+        </p>
+      </div>
+
+      <div class="help-card mb-4">
+        <h6>📊 Как работает аналитика?</h6>
+        <p class="text-muted">
+          Аналитика показывает:
+        </p>
+        <ul class="help-list">
+          <li>Самые активные keywords</li>
+          <li>Каналы с наибольшим количеством сигналов</li>
+          <li>Динамику активности по дням</li>
+        </ul>
+      </div>
+
+      <div class="help-card mb-4">
+        <h6>🔒 Есть ли лимиты?</h6>
+        <p class="text-muted">
+          Да. Лимиты на количество каналов,
+          ключевых слов и сигналов зависят от тарифа.
+        </p>
+      </div>
+
+      <div class="help-card help-card--accent">
+        <h6>🎯 Главный совет</h6>
+        <p class="mb-0">
+          Лучшие результаты даёт комбинация:
+          хорошие каналы + слова намерения + минус-слова
+          и быстрая реакция на сигналы.
+        </p>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<script src="assets/js/bootstrap-5.0.0-beta1.min.js"></script>
+</body>
+</html>

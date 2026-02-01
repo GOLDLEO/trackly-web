@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard — Trackly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css">
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/lindy-uikit.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="app-sidebar" id="appSidebar">
+
+    <div class="app-sidebar__top d-lg-none">
+      <div class="app-sidebar__title">Меню</div>
+      <button class="app-icon-btn" type="button" id="btnCloseSidebar">
+        <i class="lni lni-close"></i>
+      </button>
+    </div>
+
+    <nav class="app-nav">
+      <a class="app-nav__link active" href="dashboard.html">
+        <i class="lni lni-dashboard"></i>
+        <span>Dashboard</span>
+      </a>
+
+      <a class="app-nav__link" href="monitoring.html">
+        <i class="lni lni-bolt-alt"></i>
+        <span>Мониторинг</span>
+        <span class="app-nav__badge">LIVE</span>
+      </a>
+
+      <a class="app-nav__link" href="favorites.html">
+        <i class="lni lni-star"></i>
+        <span>Избранное</span>
+      </a>
+
+      <div class="app-nav__divider"></div>
+
+      <a class="app-nav__link" href="channels.html">
+        <i class="lni lni-world"></i>
+        <span>Каналы</span>
+      </a>
+
+      <a class="app-nav__link" href="keywords.html">
+        <i class="lni lni-keyword-research"></i>
+        <span>Ключевые слова</span>
+      </a>
+
+      <a class="app-nav__link" href="analytics.html">
+        <i class="lni lni-bar-chart"></i>
+        <span>Аналитика</span>
+      </a>
+
+      <div class="app-nav__divider"></div>
+
+      <a class="app-nav__link" href="subscription.html">
+        <i class="lni lni-credit-cards"></i>
+        <span>Подписка</span>
+      </a>
+
+
+      <div class="app-nav__divider"></div>
+
+      <a class="app-nav__link" href="faq.html">
+        <i class="lni lni-question-circle"></i>
+        <span>FAQ / Инструкция</span>
+      </a>
+
+      <a class="app-nav__link" href="help.html">
+        <i class="lni lni-support"></i>
+        <span>Инструкция</span>
+      </a>
+    </nav>
+
+    <div class="app-sidebar__bottom">
+      <div class="app-mini-card">
+        <div class="app-mini-card__title">Быстрые действия</div>
+        <a class="button radius-30 w-100 mb-10" href="channels.html">➕ Добавить канал</a>
+        <a class="button radius-30 w-100 button-outline" href="keywords.html">➕ Добавить keyword</a>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- MAIN -->
+  <div class="app-main">
+
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="app-header__left">
+        <button class="app-icon-btn d-lg-none" id="btnToggleSidebar">
+          <i class="lni lni-menu"></i>
+        </button>
+
+        <a class="app-brand" href="dashboard.html">
+          <img src="assets/img/logo/logo.svg" class="app-brand__logo">
+          <span class="app-brand__text">Trackly</span>
+        </a>
+
+        <div class="app-search d-none d-md-flex">
+          <i class="lni lni-search-alt"></i>
+          <input type="text" placeholder="Поиск: канал, keyword, текст...">
+        </div>
+      </div>
+
+      <div class="app-header__right gap-2 d-flex align-items-center">
+
+  <span class="badge bg-light text-dark border">
+    Plan: <strong>Basic</strong>
+  </span>
+
+  <!-- Favorites -->
+  <div class="header-action">
+    <a class="app-icon-btn" href="favorites.html">
+      <i class="lni lni-star-filled"></i>
+    </a>
+
+    <div class="header-menu">
+      <a href="favorites.html">⭐ Все избранное</a>
+      <a href="favorites.html#channels">📡 Каналы</a>
+      <a href="favorites.html#keywords">🔑 Keywords</a>
+    </div>
+  </div>
+
+  <!-- Notifications -->
+  <div class="header-action">
+    <a class="app-icon-btn" href="monitoring.html">
+      <i class="lni lni-alarm"></i>
+    </a>
+
+    <div class="header-menu">
+      <a href="monitoring.html?live=1">🟢 LIVE сигналы</a>
+      <a href="monitoring.html?today=1">📅 За сегодня</a>
+      <a href="monitoring.html?alerts=1">🔔 Уведомления</a>
+    </div>
+  </div>
+
+  <!-- User -->
+  <div class="header-action">
+    <div class="app-user">
+      <div class="app-user__meta d-none d-sm-block">
+        <div class="app-user__name">Vlad Ocean</div>
+        <div class="app-user__sub">@trackly_user</div>
+      </div>
+      <div class="app-user__avatar">VO</div>
+    </div>
+
+    <div class="header-menu">
+      <a href="profile.html">👤 Профиль</a>
+      <a href="subscription.html">💳 Подписка</a>
+      <a href="settings.html">⚙️ Настройки</a>
+      <a href="logout.html">🚪 Выйти</a>
+    </div>
+  </div>
+
+</div>
+
+
+
+      
+    </header>
+
+    <!-- CONTENT -->
+    <main class="app-content">
+
+  <!-- TITLE -->
+  <div class="mb-4">
+    <h3 class="mb-1">Dashboard</h3>
+    <p class="text-muted mb-0">
+      Сводка активности и последние сигналы
+    </p>
+  </div>
+
+  <!-- METRICS -->
+  <div class="row mb-4">
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0"
+     data-bs-toggle="tooltip"
+     data-bs-placement="top"
+     title="Количество каналов, которые сейчас активно мониторятся">
+
+        <div class="card-body">
+          <small class="text-muted">Активные каналы</small>
+          <h4 class="mb-0">12</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0"
+     data-bs-toggle="tooltip"
+     data-bs-placement="top"
+     title="Количество каналов, которые сейчас активно мониторятся">
+
+        <div class="card-body">
+          <small class="text-muted">Ключевые слова</small>
+          <h4 class="mb-0">34</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0"
+     data-bs-toggle="tooltip"
+     data-bs-placement="top"
+     title="Количество каналов, которые сейчас активно мониторятся">
+
+        <div class="card-body">
+          <small class="text-muted">Совпадений за 24ч</small>
+          <h4 class="mb-0">128</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card shadow-sm border-0"
+     data-bs-toggle="tooltip"
+     data-bs-placement="top"
+     title="Количество каналов, которые сейчас активно мониторятся">
+
+        <div class="card-body">
+          <small class="text-muted">Подписка</small>
+          <h6 class="mb-0">Pro · 18 дней</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK ACTIONS -->
+  <!-- QUICK ACTIONS -->
+<div class="card shadow-sm border-0 mb-4">
+  <div class="card-body d-flex flex-wrap gap-2">
+
+    <!-- Add Channel -->
+    <div class="quick-action">
+      <a href="channels.html" class="button radius-30">
+        ➕ Добавить канал
+      </a>
+
+      <div class="quick-action-menu">
+        <a href="channels.html">📡 Добавить канал</a>
+        <a href="channels.html#bulk">📥 Импорт списком</a>
+        <a href="channels.html#rules">⚙️ Настроить фильтры</a>
+      </div>
+    </div>
+
+    <!-- Add Keyword -->
+    <div class="quick-action">
+      <a href="keywords.html" class="button radius-30">
+        ➕ Добавить keyword
+      </a>
+
+      <div class="quick-action-menu">
+        <a href="keywords.html">🔑 Новый keyword</a>
+        <a href="keywords.html#groups">📂 Группы keywords</a>
+        <a href="keywords.html#minus">🚫 Минус-слова</a>
+      </div>
+    </div>
+
+    <!-- Monitoring -->
+    <div class="quick-action">
+      <a href="monitoring.html" class="button radius-30">
+        🔥 Мониторинг
+      </a>
+
+      <div class="quick-action-menu">
+        <a href="monitoring.html">⚡ Все сигналы</a>
+        <a href="monitoring.html?live=1">🟢 LIVE</a>
+        <a href="monitoring.html?alerts=1">🔔 Уведомления</a>
+      </div>
+    </div>
+
+    <!-- Favorites -->
+    <div class="quick-action">
+      <a href="favorites.html" class="button radius-30">
+        ⭐ Избранное
+      </a>
+
+      <div class="quick-action-menu">
+        <a href="favorites.html">⭐ Сохранённые сигналы</a>
+        <a href="favorites.html#channels">📡 Каналы</a>
+        <a href="favorites.html#keywords">🔑 Keywords</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- CONTENT GRID -->
+  <div class="row">
+
+    <!-- FEED -->
+    <div class="col-lg-8">
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="mb-0">Последние сигналы</h5>
+        <a href="monitoring.html" class="small text-primary">
+          Перейти в мониторинг →
+        </a>
+      </div>
+
+      <div class="alert-item mb-2">
+        <div class="d-flex justify-content-between">
+          <strong>Django Jobs</strong>
+          <small class="text-muted">5 мин назад</small>
+        </div>
+        <p class="text-muted small mb-1">
+          Ищу Django-разработчика, проект срочный…
+        </p>
+        <div class="small">
+          <a href="#" class="text-primary me-3">Открыть</a>
+          <a href="#" class="text-warning">⭐ В избранное</a>
+        </div>
+      </div>
+
+      <div class="alert-item mb-2">
+        <div class="d-flex justify-content-between">
+          <strong>Crypto Chat</strong>
+          <small class="text-muted">12 мин назад</small>
+        </div>
+        <p class="text-muted small mb-1">
+          Проблемы с выводом средств, кто сталкивался?
+        </p>
+        <div class="small">
+          <a href="#" class="text-primary me-3">Открыть</a>
+          <a href="#" class="text-warning">⭐ В избранное</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <div class="col-lg-4">
+
+      <div class="card shadow-sm border-0 mb-3">
+        <div class="card-body">
+          <h6 class="mb-3">📊 Сейчас важно</h6>
+
+          <p class="small mb-2">
+            🔑 <strong>Топ keyword:</strong><br>
+            <span class="text-muted">django (42 сигнала)</span>
+          </p>
+
+          <p class="small mb-3">
+            📡 <strong>Самый активный канал:</strong><br>
+            <span class="text-muted">Django Jobs</span>
+          </p>
+
+          <a href="analytics.html" class="button w-100 radius-30">
+            Открыть аналитику
+          </a>
+        </div>
+      </div>
+
+      <div class="card shadow-sm border-0"
+     data-bs-toggle="tooltip"
+     data-bs-placement="top"
+     title="Количество каналов, которые сейчас активно мониторятся">
+
+        <div class="card-body">
+          <h6 class="mb-2">💡 Совет</h6>
+          <p class="text-muted small mb-0">
+            Добавь минус-слова, чтобы убрать шум
+            и повысить качество сигналов.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+  </div>
+</div>
+
+<script src="assets/js/bootstrap-5.0.0-beta1.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    // Tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+    // Popovers
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+
+  });
+</script>
+
+</body>
+</html>

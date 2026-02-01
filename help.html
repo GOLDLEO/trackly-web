@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Инструкция — Trackly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css">
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+  <link rel="stylesheet" href="assets/css/lindy-uikit.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="app-sidebar">
+    <nav class="app-nav">
+      <a class="app-nav__link" href="dashboard.html">
+        <i class="lni lni-dashboard"></i><span>Dashboard</span>
+      </a>
+      <a class="app-nav__link" href="monitoring.html">
+        <i class="lni lni-bolt-alt"></i><span>Мониторинг</span>
+      </a>
+      <a class="app-nav__link" href="favorites.html">
+        <i class="lni lni-star"></i><span>Избранное</span>
+      </a>
+
+      <div class="app-nav__divider"></div>
+
+      <a class="app-nav__link" href="channels.html">
+        <i class="lni lni-world"></i><span>Каналы</span>
+      </a>
+      <a class="app-nav__link" href="keywords.html">
+        <i class="lni lni-keyword-research"></i><span>Ключевые слова</span>
+      </a>
+      <a class="app-nav__link" href="analytics.html">
+        <i class="lni lni-bar-chart"></i><span>Аналитика</span>
+      </a>
+
+      <div class="app-nav__divider"></div>
+
+      <a class="app-nav__link" href="subscription.html">
+        <i class="lni lni-credit-cards"></i><span>Подписка</span>
+      </a>
+      <a class="app-nav__link active" href="help.html">
+        <i class="lni lni-support"></i><span>Инструкция</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="app-main">
+
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="app-header__left">
+        <h5 class="mb-0">Инструкция</h5>
+        <span class="text-muted small ms-2">Как эффективно использовать Trackly</span>
+      </div>
+    </header>
+
+    <main class="app-content">
+
+      <!-- INTRO -->
+      <div class="help-card mb-4">
+        <h5>Что такое Trackly?</h5>
+        <p class="text-muted mb-0">
+          Trackly — это система раннего обнаружения сигналов в Telegram.<br>
+          Она находит сообщения, которые можно использовать для продаж,
+          контента, ресёрча и OSINT — раньше, чем это сделают другие.
+        </p>
+        
+      </div>
+
+      <!-- STEP 1 -->
+      <div class="help-card mb-4">
+        <h6>1️⃣ Добавьте каналы</h6>
+        <p class="text-muted">
+          Добавьте Telegram-каналы или чаты, которые вы хотите отслеживать.
+        </p>
+        <ul class="help-list">
+          <li>Публичные каналы и чаты</li>
+          <li>Тематика: работа, крипта, бизнес, маркетинг и т.д.</li>
+          <li>Чем релевантнее канал — тем выше ценность сигналов</li>
+        </ul>
+        <a href="channels.html" class="button radius-30 mt-2">
+          ➕ Перейти к каналам
+        </a>
+
+        <p class="text-muted small">
+          Количество каналов и ключевых слов зависит от вашего тарифа.
+        </p>
+      </div>
+
+      
+
+      <!-- STEP 2 -->
+      <div class="help-card mb-4">
+        <h6>2️⃣ Подберите ключевые слова</h6>
+        <p class="text-muted">
+          Ключевые слова — это ядро Trackly.
+          Именно они определяют, какие сигналы вы получите.
+        </p>
+
+        <strong>Примеры хороших keywords:</strong>
+        <ul class="help-list">
+          <li><code>ищу</code>, <code>нужен</code>, <code>кто может</code></li>
+          <li><code>бюджет</code>, <code>срочно</code>, <code>подрядчик</code></li>
+          <li><code>django</code>, <code>crypto</code>, <code>ads</code></li>
+        </ul>
+
+        <p class="text-muted small">
+          Совет: используйте не только предметные слова,
+          но и слова намерения.
+        </p>
+
+        <a href="keywords.html" class="button radius-30 mt-2">
+          ➕ Перейти к ключевым словам
+        </a>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="help-card mb-4">
+        <h6>3️⃣ Мониторинг сигналов</h6>
+        <p class="text-muted">
+          Все найденные совпадения отображаются в ленте мониторинга —
+          в формате Telegram-чата.
+        </p>
+        <ul class="help-list">
+          <li>Realtime обновление</li>
+          <li>Фильтрация по каналу и keyword</li>
+          <li>Быстрый переход в Telegram</li>
+        </ul>
+        <a href="monitoring.html" class="button radius-30 mt-2">
+          🔥 Перейти в мониторинг
+        </a>
+      </div>
+
+      <!-- STEP 4 -->
+      <div class="help-card mb-4">
+        <h6>⭐ Избранные сигналы</h6>
+        <p class="text-muted">
+          Отмечайте ценные сообщения как «Избранное» —
+          и превращайте сигналы в рабочие элементы.
+        </p>
+        <ul class="help-list">
+          <li>Добавляйте заметки</li>
+          <li>Отмечайте статус обработки</li>
+          <li>Используйте для лидов и контента</li>
+        </ul>
+        <a href="favorites.html" class="button radius-30 mt-2">
+          ⭐ Открыть избранное
+        </a>
+      </div>
+
+      <!-- STEP 5 -->
+      <div class="help-card mb-4">
+        <h6>📊 Аналитика</h6>
+        <p class="text-muted">
+          Аналитика показывает, какие каналы и keywords
+          реально дают ценность.
+        </p>
+        <ul class="help-list">
+          <li>Самые активные keywords</li>
+          <li>Лучшие каналы-источники</li>
+          <li>Динамика по дням</li>
+        </ul>
+        <a href="analytics.html" class="button radius-30 mt-2">
+          📈 Перейти в аналитику
+        </a>
+      </div>
+
+      <!-- FINAL -->
+      <div class="help-card help-card--accent">
+        <h6>🎯 Главное правило</h6>
+        <p class="mb-0">
+          Trackly — это не «посмотреть отчёт».<br>
+          Это инструмент, который работает,
+          когда вы регулярно реагируете на сигналы.
+        </p>
+      </div>
+      <div class="help-card mt-4">
+        <h6>❓ Остались вопросы?</h6>
+        <p class="text-muted">
+          Мы собрали ответы на самые частые вопросы:
+          лимиты, минус-слова, статусы каналов, ошибки и сигналы.
+        </p>
+        <a href="faq.html" class="button radius-30">
+          Открыть FAQ
+        </a>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

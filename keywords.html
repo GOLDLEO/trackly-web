@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Ключевые слова — Trackly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css">
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+  <link rel="stylesheet" href="assets/css/lindy-uikit.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="app-sidebar">
+    <nav class="app-nav">
+      <a class="app-nav__link" href="dashboard.html">
+        <i class="lni lni-dashboard"></i><span>Dashboard</span>
+      </a>
+      <a class="app-nav__link" href="monitoring.html">
+        <i class="lni lni-bolt-alt"></i><span>Мониторинг</span>
+        <span class="app-nav__badge">LIVE</span>
+      </a>
+      <a class="app-nav__link" href="favorites.html">
+        <i class="lni lni-star"></i><span>Избранное</span>
+      </a>
+
+      <div class="app-nav__divider"></div>
+
+      <a class="app-nav__link" href="channels.html">
+        <i class="lni lni-world"></i><span>Каналы</span>
+      </a>
+      <a class="app-nav__link active" href="keywords.html">
+        <i class="lni lni-keyword-research"></i><span>Ключевые слова</span>
+      </a>
+      <a class="app-nav__link" href="analytics.html">
+        <i class="lni lni-bar-chart"></i><span>Аналитика</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="app-main">
+
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="app-header__left">
+        <h5 class="mb-0">Ключевые слова</h5>
+        <span class="text-muted small ms-2">Ядро мониторинга</span>
+      </div>
+
+      <div class="app-header__right">
+        <span class="badge bg-light text-dark border">
+          Использовано: <strong>12 / 30</strong>
+        </span>
+        <a href="#" class="app-icon-btn" title="Добавить keyword">
+          <i class="lni lni-plus"></i>
+        </a>
+      </div>
+    </header>
+
+    <main class="app-content">
+
+      <!-- TOOLBAR -->
+      <div class="card border-0 shadow-sm mb-3">
+        <div class="card-body d-flex flex-wrap gap-2 align-items-center">
+
+          <input class="form-control form-control-sm" style="max-width:260px"
+                 placeholder="Поиск keyword..." />
+
+          <select class="form-select form-select-sm w-auto">
+            <option>Все каналы</option>
+            <option>Django Jobs</option>
+            <option>Crypto Chat</option>
+          </select>
+
+          <select class="form-select form-select-sm w-auto">
+            <option>Любая активность</option>
+            <option>Есть сигналы</option>
+            <option>Без сигналов</option>
+          </select>
+
+          <div class="ms-auto d-flex gap-2">
+            <button class="btn btn-sm btn-outline-secondary">Экспорт</button>
+            <button class="btn btn-sm btn-primary">➕ Добавить keyword</button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- KEYWORDS LIST -->
+      <div class="keywords-list">
+
+        <!-- KEYWORD ITEM -->
+        <div class="keyword-item">
+          <div class="keyword-main">
+            <strong>django developer</strong>
+            <span class="keyword-scope badge bg-light text-dark">Global</span>
+          </div>
+
+          <div class="keyword-meta">
+            <span>📡 Каналов: <strong>5</strong></span>
+            <span>⚡ Сигналов: <strong>42</strong></span>
+            <span class="text-muted">за 7 дней</span>
+          </div>
+
+          <div class="keyword-actions">
+            <a href="monitoring.html" class="btn btn-sm btn-outline-primary">
+              Смотреть
+            </a>
+            <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#negativeModal">
+              🚫 Минус-слова
+            </button>
+            <button class="btn btn-sm btn-outline-secondary">✏️</button>
+            <button class="btn btn-sm btn-outline-danger">✕</button>
+          </div>
+        </div>
+
+        <!-- EMPTY -->
+        <div class="keyword-item is-empty">
+          <div class="keyword-main">
+            <strong>new project</strong>
+            <span class="keyword-scope badge bg-light text-dark">Global</span>
+          </div>
+
+          <div class="keyword-meta text-muted">
+            Пока нет совпадений
+          </div>
+
+          <div class="keyword-actions">
+            <button class="btn btn-sm btn-outline-secondary">✏️</button>
+            <button class="btn btn-sm btn-outline-danger">✕</button>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<!-- NEGATIVE KEYWORDS MODAL -->
+<div class="modal fade" id="negativeModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h6 class="modal-title">Минус-слова для keyword</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <span class="badge bg-light text-dark border">курс ✕</span>
+          <span class="badge bg-light text-dark border">обучение ✕</span>
+          <span class="badge bg-light text-dark border">pdf ✕</span>
+        </div>
+
+        <input class="form-control form-control-sm"
+               placeholder="Добавить минус-слово..." />
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">
+          Закрыть
+        </button>
+        <button class="btn btn-sm btn-primary">
+          Сохранить
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/bootstrap-5.0.0-beta1.min.js"></script>
+</body>
+</html>

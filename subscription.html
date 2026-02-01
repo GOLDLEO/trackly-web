@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Подписка — Trackly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css">
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+  <link rel="stylesheet" href="assets/css/lindy-uikit.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="app-sidebar">
+    <nav class="app-nav">
+      <a class="app-nav__link" href="dashboard.html">
+        <i class="lni lni-dashboard"></i><span>Dashboard</span>
+      </a>
+      <a class="app-nav__link" href="monitoring.html">
+        <i class="lni lni-bolt-alt"></i><span>Мониторинг</span>
+      </a>
+      <a class="app-nav__link" href="favorites.html">
+        <i class="lni lni-star"></i><span>Избранное</span>
+      </a>
+
+      <div class="app-nav__divider"></div>
+
+      <a class="app-nav__link" href="channels.html">
+        <i class="lni lni-world"></i><span>Каналы</span>
+      </a>
+      <a class="app-nav__link" href="keywords.html">
+        <i class="lni lni-keyword-research"></i><span>Ключевые слова</span>
+      </a>
+      <a class="app-nav__link" href="analytics.html">
+        <i class="lni lni-bar-chart"></i><span>Аналитика</span>
+      </a>
+
+      <div class="app-nav__divider"></div>
+
+      <a class="app-nav__link active" href="subscription.html">
+        <i class="lni lni-credit-cards"></i><span>Подписка</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="app-main">
+
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="app-header__left">
+        <h5 class="mb-0">Подписка</h5>
+        <span class="text-muted small ms-2">Управление тарифом</span>
+      </div>
+    </header>
+
+    <main class="app-content">
+
+      <!-- CURRENT PLAN -->
+      <div class="subscription-card mb-4">
+        <div>
+          <h5 class="mb-1">Текущий тариф: <strong>Pro</strong></h5>
+          <div class="text-muted small">
+            Активен до <strong>12 марта 2026</strong>
+          </div>
+        </div>
+
+        <div class="subscription-actions">
+          <a href="#" class="button radius-30">Продлить</a>
+          <a href="#" class="button button-outline radius-30">Сменить тариф</a>
+        </div>
+      </div>
+
+      <!-- LIMITS -->
+      <div class="row mb-4">
+
+        <div class="col-md-4">
+          <div class="limit-card">
+            <div class="limit-title">Каналы</div>
+            <div class="limit-value">12 / 20</div>
+            <div class="limit-bar">
+              <div class="limit-bar__fill" style="width:60%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="limit-card">
+            <div class="limit-title">Ключевые слова</div>
+            <div class="limit-value">34 / 50</div>
+            <div class="limit-bar">
+              <div class="limit-bar__fill" style="width:68%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="limit-card">
+            <div class="limit-title">Realtime сигналы</div>
+            <div class="limit-value">Без ограничений</div>
+            <div class="limit-note">Доступно в Pro</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PLANS -->
+      <h6 class="mb-3">Доступные тарифы</h6>
+
+      <div class="row mb-5">
+
+        <div class="col-md-4">
+          <div class="plan-card">
+            <h6>Free</h6>
+            <div class="plan-price">$0</div>
+            <ul>
+              <li>3 канала</li>
+              <li>5 keywords</li>
+              <li>Без аналитики</li>
+            </ul>
+            <a href="#" class="button button-outline w-100 radius-30">Текущий</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="plan-card plan-card--active">
+            <h6>Pro</h6>
+            <div class="plan-price">$29 / мес</div>
+            <ul>
+              <li>20 каналов</li>
+              <li>50 keywords</li>
+              <li>Аналитика + избранное</li>
+            </ul>
+            <a href="#" class="button w-100 radius-30">Активен</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="plan-card">
+            <h6>VIP</h6>
+            <div class="plan-price">$99 / мес</div>
+            <ul>
+              <li>Без лимитов</li>
+              <li>Realtime + Webhook</li>
+              <li>OSINT / API</li>
+            </ul>
+            <a href="#" class="button w-100 radius-30">Перейти</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PAYMENT HISTORY -->
+      <h6 class="mb-3">История оплат</h6>
+
+      <div class="card border-0 shadow-sm">
+        <div class="card-body p-0">
+          <table class="table mb-0">
+            <thead>
+              <tr>
+                <th>Дата</th>
+                <th>Тариф</th>
+                <th>Сумма</th>
+                <th>Статус</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12.02.2026</td>
+                <td>Pro (1 мес)</td>
+                <td>$29</td>
+                <td><span class="badge bg-success">Paid</span></td>
+              </tr>
+              <tr>
+                <td>12.01.2026</td>
+                <td>Pro (1 мес)</td>
+                <td>$29</td>
+                <td><span class="badge bg-success">Paid</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

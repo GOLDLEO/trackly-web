@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мониторинг — Trackly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css">
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+  <link rel="stylesheet" href="assets/css/lindy-uikit.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="app-sidebar">
+    <nav class="app-nav">
+      <a class="app-nav__link" href="dashboard.html">
+        <i class="lni lni-dashboard"></i><span>Dashboard</span>
+      </a>
+      <a class="app-nav__link active" href="monitoring.html">
+        <i class="lni lni-bolt-alt"></i><span>Мониторинг</span>
+        <span class="app-nav__badge">LIVE</span>
+      </a>
+      <a class="app-nav__link" href="favorites.html">
+        <i class="lni lni-star"></i><span>Избранное</span>
+      </a>
+
+      <div class="app-nav__divider"></div>
+
+      <a class="app-nav__link" href="channels.html">
+        <i class="lni lni-world"></i><span>Каналы</span>
+      </a>
+      <a class="app-nav__link" href="keywords.html">
+        <i class="lni lni-keyword-research"></i><span>Ключевые слова</span>
+      </a>
+      <a class="app-nav__link" href="analytics.html">
+        <i class="lni lni-bar-chart"></i><span>Аналитика</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="app-main">
+
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="app-header__left">
+        <h5 class="mb-0">Мониторинг</h5>
+        <span class="text-muted small ms-2">Живая лента сигналов</span>
+      </div>
+
+      <div class="app-header__right">
+        <span class="badge bg-light text-dark border">LIVE</span>
+      </div>
+    </header>
+
+    <main class="app-content">
+
+      <div class="monitoring-layout">
+
+        <!-- FILTERS -->
+        <aside class="monitoring-filters">
+
+          <h6 class="mb-2">Фильтры</h6>
+
+          <input class="form-control form-control-sm mb-2"
+                 placeholder="Поиск по тексту" />
+
+          <select class="form-select form-select-sm mb-2">
+            <option>Все каналы</option>
+            <option>Django Jobs</option>
+            <option>Crypto Chat</option>
+          </select>
+
+          <select class="form-select form-select-sm mb-3">
+            <option>Все keywords</option>
+            <option>django</option>
+            <option>backend</option>
+          </select>
+
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label small">
+              Только непрочитанные
+            </label>
+          </div>
+
+        </aside>
+
+        <!-- FEED -->
+        <section class="monitoring-feed">
+
+          <!-- ALERT -->
+          <div class="alert-row is-unread">
+            <div class="alert-meta">
+              <strong>Django Jobs</strong>
+              <span class="alert-time">5 мин назад</span>
+            </div>
+
+            <div class="alert-text">
+              Ищу <mark>django</mark> разработчика, проект срочный,
+              бюджет обсуждаем, писать в лс
+            </div>
+
+            <div class="alert-keywords">
+              <span>#django</span>
+              <span>#backend</span>
+            </div>
+
+            <div class="alert-actions">
+              <a href="#" title="Открыть"><i class="lni lni-link"></i></a>
+              <a href="#" title="В избранное"><i class="lni lni-star"></i></a>
+            </div>
+          </div>
+
+          <!-- ALERT -->
+          <div class="alert-row">
+            <div class="alert-meta">
+              <strong>Crypto Chat</strong>
+              <span class="alert-time">12 мин назад</span>
+            </div>
+
+            <div class="alert-text">
+              У кого сегодня проблемы с выводом средств?
+            </div>
+
+            <div class="alert-keywords">
+              <span>#wallet</span>
+            </div>
+
+            <div class="alert-actions">
+              <a href="#"><i class="lni lni-link"></i></a>
+              <a href="#"><i class="lni lni-star"></i></a>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

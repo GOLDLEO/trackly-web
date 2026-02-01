@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Избранное — Trackly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css">
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+  <link rel="stylesheet" href="assets/css/lindy-uikit.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="app-sidebar">
+    <nav class="app-nav">
+      <a class="app-nav__link" href="dashboard.html">
+        <i class="lni lni-dashboard"></i><span>Dashboard</span>
+      </a>
+      <a class="app-nav__link" href="monitoring.html">
+        <i class="lni lni-bolt-alt"></i><span>Мониторинг</span>
+      </a>
+      <a class="app-nav__link active" href="favorites.html">
+        <i class="lni lni-star"></i><span>Избранное</span>
+      </a>
+
+      <div class="app-nav__divider"></div>
+
+      <a class="app-nav__link" href="channels.html">
+        <i class="lni lni-world"></i><span>Каналы</span>
+      </a>
+      <a class="app-nav__link" href="keywords.html">
+        <i class="lni lni-keyword-research"></i><span>Ключевые слова</span>
+      </a>
+      <a class="app-nav__link" href="analytics.html">
+        <i class="lni lni-bar-chart"></i><span>Аналитика</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="app-main">
+
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="app-header__left">
+        <h5 class="mb-0">Избранные сигналы</h5>
+        <span class="text-muted small ms-2">Рабочие алерты</span>
+      </div>
+    </header>
+
+    <main class="app-content">
+
+      <!-- FILTER BAR -->
+      <div class="favorites-filters">
+
+        <select class="form-select form-select-sm">
+          <option>Все каналы</option>
+          <option>Django Jobs</option>
+          <option>Crypto Chat</option>
+        </select>
+
+        <select class="form-select form-select-sm">
+          <option>Все keywords</option>
+          <option>django</option>
+          <option>backend</option>
+        </select>
+
+        <select class="form-select form-select-sm">
+          <option>Все статусы</option>
+          <option>New</option>
+          <option>Processed</option>
+        </select>
+
+      </div>
+
+      <!-- FAVORITES LIST -->
+      <div class="favorites-list">
+
+        <!-- FAVORITE ITEM -->
+        <div class="favorite-item">
+
+          <div class="favorite-header">
+            <strong>Django Jobs</strong>
+            <span class="favorite-date">Сегодня, 11:42</span>
+          </div>
+
+          <div class="favorite-text">
+            Ищу <mark>django</mark> разработчика, проект срочный,
+            бюджет обсуждаем, писать в лс
+          </div>
+
+          <div class="favorite-keywords">
+            <span>#django</span>
+            <span>#backend</span>
+          </div>
+
+          <textarea class="favorite-note"
+            placeholder="Заметка: контакт, идея, комментарий..."></textarea>
+
+          <div class="favorite-actions">
+            <select class="form-select form-select-sm w-auto">
+              <option>New</option>
+              <option>Processed</option>
+            </select>
+
+            <a href="#" class="text-primary small">
+              <i class="lni lni-link"></i> Открыть
+            </a>
+          </div>
+
+        </div>
+
+        <!-- FAVORITE ITEM -->
+        <div class="favorite-item processed">
+
+          <div class="favorite-header">
+            <strong>Crypto Chat</strong>
+            <span class="favorite-date">Вчера</span>
+          </div>
+
+          <div class="favorite-text">
+            У кого сегодня проблемы с выводом средств?
+          </div>
+
+          <div class="favorite-keywords">
+            <span>#wallet</span>
+          </div>
+
+          <textarea class="favorite-note"
+            placeholder="Заметка"></textarea>
+
+          <div class="favorite-actions">
+            <select class="form-select form-select-sm w-auto">
+              <option>Processed</option>
+              <option>New</option>
+            </select>
+
+            <a href="#" class="text-primary small">
+              <i class="lni lni-link"></i> Открыть
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

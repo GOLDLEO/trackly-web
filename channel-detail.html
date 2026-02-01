@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Канал — Trackly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css">
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+  <link rel="stylesheet" href="assets/css/lindy-uikit.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="app-sidebar">
+    <nav class="app-nav">
+      <a class="app-nav__link" href="channels.html">
+        ← Назад к каналам
+      </a>
+
+      <div class="app-nav__divider"></div>
+
+      <a class="app-nav__link" href="monitoring.html">
+        <i class="lni lni-bolt-alt"></i>
+        <span>Мониторинг</span>
+      </a>
+      <a class="app-nav__link" href="keywords.html">
+        <i class="lni lni-keyword-research"></i>
+        <span>Keywords</span>
+      </a>
+      <a class="app-nav__link" href="analytics.html">
+        <i class="lni lni-bar-chart"></i>
+        <span>Аналитика</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="app-main">
+
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="app-header__left">
+        <h5 class="mb-0">Django Jobs</h5>
+        <span class="text-muted small ms-2">t.me/django_jobs</span>
+      </div>
+
+      <div class="app-header__right">
+        <span class="badge bg-success">Active</span>
+        <button class="app-icon-btn" title="Пауза">
+          ⏸
+        </button>
+        <button class="app-icon-btn text-danger" title="Удалить">
+          ✕
+        </button>
+      </div>
+    </header>
+
+    <main class="app-content">
+
+      <!-- METRICS -->
+      <div class="row mb-4">
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm p-3">
+            <small class="text-muted">Всего сигналов</small>
+            <h4 class="mb-0">324</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm p-3">
+            <small class="text-muted">За 24 часа</small>
+            <h4 class="mb-0">18</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm p-3">
+            <small class="text-muted">За 7 дней</small>
+            <h4 class="mb-0">92</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card border-0 shadow-sm p-3">
+            <small class="text-muted">Keywords</small>
+            <h4 class="mb-0">6</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- KEYWORDS -->
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body">
+          <h6 class="mb-3">Ключевые слова канала</h6>
+
+          <span class="badge bg-light text-dark">django</span>
+          <span class="badge bg-light text-dark">backend</span>
+          <span class="badge bg-light text-dark">freelance</span>
+          <span class="badge bg-light text-dark">remote</span>
+        </div>
+      </div>
+
+      <!-- NEGATIVE KEYWORDS -->
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body">
+          <h6 class="mb-3">Минус-слова (для этого канала)</h6>
+
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light text-dark border">курс ✕</span>
+            <span class="badge bg-light text-dark border">обучение ✕</span>
+            <span class="badge bg-light text-dark border">pdf ✕</span>
+          </div>
+
+          <input class="form-control form-control-sm"
+                 placeholder="Добавить минус-слово…" />
+        </div>
+      </div>
+
+      <!-- LAST ALERTS -->
+      <h6 class="mb-3">Последние сигналы</h6>
+
+      <div class="alert-item mb-2">
+        <div class="d-flex justify-content-between">
+          <strong>5 минут назад</strong>
+          <a href="#" class="small text-warning">⭐</a>
+        </div>
+        <p class="small text-muted mb-1">
+          Ищу Django-разработчика, проект срочный, бюджет обсуждаем.
+        </p>
+        <a href="#" class="small text-primary">Открыть в Telegram</a>
+      </div>
+
+      <div class="alert-item mb-4">
+        <div class="d-flex justify-content-between">
+          <strong>2 часа назад</strong>
+          <a href="#" class="small text-warning">⭐</a>
+        </div>
+        <p class="small text-muted mb-1">
+          Нужен backend для стартапа, стек Django + DRF.
+        </p>
+        <a href="#" class="small text-primary">Открыть в Telegram</a>
+      </div>
+
+      <!-- SETTINGS -->
+      <div class="card border-0 shadow-sm">
+        <div class="card-body">
+          <h6 class="mb-3">Настройки канала</h6>
+
+          <div class="form-check form-switch mb-2">
+            <input class="form-check-input" type="checkbox" checked>
+            <label class="form-check-label">
+              Уведомления включены
+            </label>
+          </div>
+
+          <button class="button button-outline radius-30 mt-2">
+            ⏸ Поставить на паузу
+          </button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<script src="assets/js/bootstrap-5.0.0-beta1.min.js"></script>
+</body>
+</html>

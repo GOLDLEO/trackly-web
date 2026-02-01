@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Аналитика — Trackly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css">
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+  <link rel="stylesheet" href="assets/css/lindy-uikit.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="app-sidebar">
+    <nav class="app-nav">
+      <a class="app-nav__link" href="dashboard.html">
+        <i class="lni lni-dashboard"></i><span>Dashboard</span>
+      </a>
+      <a class="app-nav__link" href="monitoring.html">
+        <i class="lni lni-bolt-alt"></i><span>Мониторинг</span>
+      </a>
+      <a class="app-nav__link" href="favorites.html">
+        <i class="lni lni-star"></i><span>Избранное</span>
+      </a>
+
+      <div class="app-nav__divider"></div>
+
+      <a class="app-nav__link" href="channels.html">
+        <i class="lni lni-world"></i><span>Каналы</span>
+      </a>
+      <a class="app-nav__link" href="keywords.html">
+        <i class="lni lni-keyword-research"></i><span>Ключевые слова</span>
+      </a>
+      <a class="app-nav__link active" href="analytics.html">
+        <i class="lni lni-bar-chart"></i><span>Аналитика</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <div class="app-main">
+
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="app-header__left">
+        <h5 class="mb-0">Аналитика</h5>
+        <span class="text-muted small ms-2">Ценность сигналов</span>
+      </div>
+    </header>
+
+    <main class="app-content">
+
+      <!-- SUMMARY -->
+      <div class="row mb-4">
+
+        <div class="col-md-4">
+          <div class="stat-card">
+            <div class="stat-title">Всего сигналов</div>
+            <div class="stat-value">1 284</div>
+            <div class="stat-sub">за всё время</div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="stat-card">
+            <div class="stat-title">Полезные</div>
+            <div class="stat-value">312</div>
+            <div class="stat-sub">⭐ добавлены в избранное</div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="stat-card">
+            <div class="stat-title">Конверсия</div>
+            <div class="stat-value">24%</div>
+            <div class="stat-sub">избранные / все</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- KEYWORDS ANALYTICS -->
+      <div class="analytics-section">
+
+        <div class="analytics-header">
+          <h6>Аналитика по ключевым словам</h6>
+        </div>
+
+        <table class="table analytics-table">
+          <thead>
+            <tr>
+              <th>Keyword</th>
+              <th>Сигналов</th>
+              <th>Избранные</th>
+              <th>Конверсия</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#django</td>
+              <td>128</td>
+              <td>42</td>
+              <td>33%</td>
+            </tr>
+            <tr>
+              <td>#backend</td>
+              <td>94</td>
+              <td>18</td>
+              <td>19%</td>
+            </tr>
+            <tr>
+              <td>#crypto</td>
+              <td>212</td>
+              <td>12</td>
+              <td>5%</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <!-- CHANNELS ANALYTICS -->
+      <div class="analytics-section">
+
+        <div class="analytics-header">
+          <h6>Аналитика по каналам</h6>
+        </div>
+
+        <table class="table analytics-table">
+          <thead>
+            <tr>
+              <th>Канал</th>
+              <th>Сигналов</th>
+              <th>Избранные</th>
+              <th>Полезность</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Django Jobs</td>
+              <td>96</td>
+              <td>41</td>
+              <td><span class="badge bg-success">Высокая</span></td>
+            </tr>
+            <tr>
+              <td>Startup Chat</td>
+              <td>143</td>
+              <td>21</td>
+              <td><span class="badge bg-warning">Средняя</span></td>
+            </tr>
+            <tr>
+              <td>Crypto Flood</td>
+              <td>380</td>
+              <td>9</td>
+              <td><span class="badge bg-danger">Шум</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

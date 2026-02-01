@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Trackly — Demo Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta1.min.css">
+  <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+  <link rel="stylesheet" href="assets/css/lindy-uikit.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body class="bg-light">
+
+<!-- DEMO BANNER -->
+<div style="
+  background:#eff6ff;
+  border-bottom:1px solid #dbeafe;
+  padding:10px 18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:14px;
+">
+  <span>🚀 Demo-режим — пример работы Trackly</span>
+  <a href="#" class="button radius-30">
+    Войти через Telegram
+  </a>
+</div>
+
+<!-- HEADER -->
+<header class="app-header">
+  <div class="app-header__left">
+    <a class="app-brand" href="#">
+      <span class="app-brand__text">Trackly</span>
+    </a>
+  </div>
+
+  <div class="app-header__right">
+    <span class="badge bg-light text-dark border">Demo</span>
+  </div>
+</header>
+
+<div class="app-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="app-sidebar">
+    <nav class="app-nav">
+      <a class="app-nav__link active" href="#">
+        <i class="lni lni-dashboard"></i>
+        <span>Dashboard</span>
+      </a>
+      <a class="app-nav__link demo-disabled" href="#">
+        <i class="lni lni-bolt-alt"></i>
+        <span>Мониторинг</span>
+      </a>
+      <a class="app-nav__link demo-disabled" href="#">
+        <i class="lni lni-star"></i>
+        <span>Избранное</span>
+      </a>
+      <a class="app-nav__link demo-disabled" href="#">
+        <i class="lni lni-world"></i>
+        <span>Каналы</span>
+      </a>
+      <a class="app-nav__link demo-disabled" href="#">
+        <i class="lni lni-keyword-research"></i>
+        <span>Ключевые слова</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="app-main app-content">
+
+    <!-- METRICS -->
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <div class="card p-3">
+          <small class="text-muted">Активные каналы</small>
+          <h4>18</h4>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3">
+          <small class="text-muted">Ключевые слова</small>
+          <h4>42</h4>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3">
+          <small class="text-muted">Совпадений за 24ч</small>
+          <h4>213</h4>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3">
+          <small class="text-muted">Тариф</small>
+          <h6>Pro (demo)</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- ALERTS -->
+    <h5 class="mb-3">Примеры найденных сигналов</h5>
+
+    <div class="alert-item mb-2">
+      <strong>Django Jobs</strong>
+      <p class="small text-muted mb-1">
+        Ищу подрядчика для Django-проекта. Срочно. Бюджет до $3000.
+      </p>
+      <span class="badge bg-light text-dark">django</span>
+      <span class="badge bg-light text-dark">backend</span>
+    </div>
+
+    <div class="alert-item mb-2">
+      <strong>Crypto Chat</strong>
+      <p class="small text-muted mb-1">
+        У кого проблемы с выводом средств сегодня?
+      </p>
+      <span class="badge bg-light text-dark">crypto</span>
+      <span class="badge bg-light text-dark">wallet</span>
+    </div>
+
+    <div class="alert-item mb-4">
+      <strong>Startup Founders</strong>
+      <p class="small text-muted mb-1">
+        Ищем разработчика для MVP, рассматриваем долгосрочно.
+      </p>
+      <span class="badge bg-light text-dark">startup</span>
+      <span class="badge bg-light text-dark">mvp</span>
+    </div>
+
+    <!-- CTA -->
+    <div style="
+      background:#111827;
+      color:#fff;
+      padding:30px;
+      border-radius:24px;
+      text-align:center;
+    ">
+      <h5>Хочешь получать такие сигналы в реальном времени?</h5>
+      <a href="#" class="button radius-50 mt-3">
+        🚀 Войти через Telegram
+      </a>
+    </div>
+
+  </main>
+</div>
+
+<script>
+  document.querySelectorAll('.demo-disabled').forEach(el => {
+    el.addEventListener('click', e => {
+      e.preventDefault();
+      alert('Доступно после входа через Telegram');
+    });
+  });
+</script>
+
+</body>
+</html>
